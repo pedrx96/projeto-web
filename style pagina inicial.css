@@ -1,0 +1,122 @@
+body {
+    background-color: black;
+    margin: 0;
+    background-image: url(componentes/img/supernova.png);
+}
+
+header {
+    display: flex;
+    flex-direction: wrap;
+    line-height: 20px;
+    font-family: 'Lobster Two', cursive;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+nav a {
+    
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #5e2683;
+    transition: 0.3s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding-right: 300px;
+}
+
+.sidebar {
+    padding-left: 100px;
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 80px;
+    color: white;
+}
+
+h2 p {
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid white;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+button::before,
+button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+}
+
+button::before {
+    left: -10px;
+    background: #5e2683;
+}
+
+button::after {
+    right: -10px;
+    background: #5e2683;
+}
+
+button:hover::before,
+button:hover::after {
+    width: 58%;
+}
+
+button:hover span {
+    color: white;
+    transition: 0.3s;
+}
+
+button span {
+    color: #5e2683;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
